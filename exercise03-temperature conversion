@@ -1,0 +1,11 @@
+function y = FtoC (F)
+tips1 = 'Temperature in F is: ';
+F = input (tips1);
+while ( (isnumeric(F) == 1) ) && (isempty(F) == 0)
+%     || (isempty(str2num(F)) == 0)   
+%  we can use the 5th line to judge whether the input is a character
+    C = (F-32) .* (5/9);
+    disp(['Temperature in C is: ',num2str(C)]);
+    tips1 = 'Temperature in F is: ';
+    F = input (tips1);
+end
