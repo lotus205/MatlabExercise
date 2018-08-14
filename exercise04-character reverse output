@@ -1,0 +1,8 @@
+clear;
+s1 = 'I like the letter E';
+len = length(s1);
+for n=1:1:length(s1)
+    s2(n) = s1(len);
+    len = len - 1;
+end
+disp(s2)
